@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard — Project 1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="brand">
+          <svg class="logo" width="34" height="34" viewBox="0 0 24 24" aria-hidden="true">
+            <rect width="24" height="24" rx="6" fill="#4F46E5"></rect>
+            <path d="M7 12h10v2H7z" fill="#fff" opacity="0.9" />
+          </svg>
+          <span class="brand-name">Project 1</span>
+        </div>
+
+        <div class="topbar-actions">
+          <label class="search" for="search-input">
+            <input id="search-input" placeholder="Search..." aria-label="Search dashboard">
+          </label>
+          <nav class="topnav" aria-label="Top navigation">
+            <a href="contact.html" class="btn-link">Contact</a>
+            <button class="avatar" aria-label="Open profile menu">LW</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item active">Overview</li>
+          <li class="nav-item">Services</li>
+          <li class="nav-item">Analytics</li>
+          <li class="nav-item">Settings</li>
+        </ul>
+      </aside>
+
+      <main class="content" role="main">
+        <section class="page-head">
+          <h1>Overview</h1>
+          <p class="muted">Welcome back — here's what's happening with your project.</p>
+        </section>
+
+        <section class="metrics-grid" aria-label="Key metrics">
+          <div class="card metric">
+            <div class="metric-title">Active Services</div>
+            <div class="metric-value">3</div>
+            <div class="metric-sub">Stable</div>
+          </div>
+
+          <div class="card metric">
+            <div class="metric-title">Requests / hr</div>
+            <div class="metric-value">1,248</div>
+            <div class="metric-sub">+4.2% vs last week</div>
+          </div>
+
+          <div class="card metric">
+            <div class="metric-title">Errors</div>
+            <div class="metric-value">2</div>
+            <div class="metric-sub">Low</div>
+          </div>
+        </section>
+
+        <section class="services" aria-label="Services list">
+          <h2>Services</h2>
+          <div class="services-grid">
+            <article class="card service-card">
+              <h3>Auth Service</h3>
+              <p class="muted">Handles sign-in and tokens.</p>
+              <div class="small">uptime 99.9%</div>
+            </article>
+
+            <article class="card service-card">
+              <h3>API Gateway</h3>
+              <p class="muted">Routes requests to backend.</p>
+              <div class="small">latency 120ms</div>
+            </article>
+
+            <article class="card service-card">
+              <h3>Worker Pool</h3>
+              <p class="muted">Background jobs and tasks.</p>
+              <div class="small">queued 4</div>
+            </article>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <small class="muted">© 2026 Project 1 — Built with care.</small>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
